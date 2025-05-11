@@ -1,13 +1,89 @@
+<!-- products.html -->
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>產品總覽 Products</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #004466;
+      padding: 12px 20px;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    h1 {
+      text-align: center;
+      padding-top: 20px;
+      color: #333;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .product-card h3 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>產品總覽 Products</h1>
-  <p>這是 products.html 頁面的內容。</p>
-  <p><a href="index.html">返回首頁</a></p>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">產品總覽</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+
+  <h1>產品總覽</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <h3><a href="product1.html">皮膚補丁凝膠（P-Gel）</a></h3>
+      <p>高保濕凝膠，維持濕潤促癒合，適合擦傷、水泡等表皮傷口。</p>
+    </div>
+    <div class="product-card">
+      <h3><a href="product2.html">藻酸凝膠（Alginate Gel）</a></h3>
+      <p>富含藻酸鹽，保持濕潤、軟化壞死，適用於肉芽生長階段。</p>
+    </div>
+    <div class="product-card">
+      <h3><a href="product3.html">皮膚補丁貼（P-Patch）</a></h3>
+      <p>防水貼合封閉傷口，保濕佳，適用於表皮性開放傷口。</p>
+    </div>
+    <div class="product-card">
+      <h3><a href="product4.html">皮膚補丁泡棉（P-Foam）</a></h3>
+      <p>吸收滲液不擴散，提供緩衝與透氣，適合慢性深層傷口。</p>
+    </div>
+    <div class="product-card">
+      <h3><a href="product5.html">藻膠敷料（P-Alginate Wound Dressing）</a></h3>
+      <p>高吸收凝膠化止血敷料，促進結痂，適用於乾式照護。</p>
+    </div>
+  </div>
 </body>
 </html>
