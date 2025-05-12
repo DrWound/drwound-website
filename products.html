@@ -1,136 +1,97 @@
-<!-- products.html -->
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>產品總覽 - Dr.Wound</title>
+  <meta charset="UTF-8">
+  <title>產品總覽 - Dr. Wound</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      margin: 0;
-      padding: 0;
-    }
+    body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; background: #f7f7f7; }
     nav {
-      background-color: #004466;
+      background-color: #004b6b;
       padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav a {
       color: white;
-      margin-right: 15px;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+    nav .lang-switch {
+      color: #ccc;
     }
     h1 {
-      color: #333;
       text-align: center;
+      padding: 20px;
     }
-    .products {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
-    .product {
-      background-color: #fff;
+    .product-card {
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      width: 200px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 16px;
+      padding: 15px;
     }
-    .product img {
-      width: 100%;
-      height: auto;
-      max-height: 180px;
+    .product-card img {
+      max-width: 100%;
+      height: 160px;
       object-fit: contain;
-      border-radius: 4px;
     }
-    .product h3 {
+    .product-card a {
+      display: block;
+      font-weight: bold;
+      color: #007acc;
       margin: 10px 0 5px;
-      color: #004466;
-    }
-    .product p {
-      font-size: 14px;
-      color: #555;
-    }
-    .back-link {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .qr-section {
-      margin-top: 60px;
-      text-align: center;
-    }
-    .qr-section img {
-      width: 200px;
-      height: auto;
-      margin-top: 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">首頁</a>
-    <a href="about.html">關於我們</a>
-    <a href="products.html">產品總覽</a>
-    <a href="downloads.html">下載資源</a>
-    <a href="contact.html">聯絡我們</a>
+    <div>
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="products.html">產品總覽</a>
+      <a href="contact.html">聯絡我們</a>
+      <a href="downloads.html">下載資源</a>
+    </div>
+    <a href="en/index.html" class="lang-switch">English</a>
   </nav>
 
-  <div class="container">
-    <h1>產品總覽</h1>
-    <div class="products">
-      <div class="product">
-        <a href="product1.html">
-          <img src="images/product1_thumb.jpg" alt="P-Gel">
-          <h3>P-Gel</h3>
-          <p>高保濕凝膠，適合表皮性傷口。</p>
-        </a>
-      </div>
-      <div class="product">
-        <a href="product2.html">
-          <img src="images/product2_thumb.jpg" alt="Alginate Gel">
-          <h3>Alginate Gel</h3>
-          <p>含藻酸鹽，適合壞死與肉芽期。</p>
-        </a>
-      </div>
-      <div class="product">
-        <a href="product3.html">
-          <img src="images/product3_thumb.jpg" alt="P-Patch">
-          <h3>P-Patch</h3>
-          <p>緊密貼合、防水保濕。</p>
-        </a>
-      </div>
-      <div class="product">
-        <a href="product4.html">
-          <img src="images/product4_thumb.jpg" alt="P-Foam">
-          <h3>P-Foam</h3>
-          <p>高吸收泡棉，支撐性佳。</p>
-        </a>
-      </div>
-      <div class="product">
-        <a href="product5.html">
-          <img src="images/product5_thumb.jpg" alt="P-Alginate Dressing">
-          <h3>P-Alginate Dressing</h3>
-          <p>高吸收止血敷料。</p>
-        </a>
-      </div>
+  <h1>產品總覽</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="product1.html">皮膚補丁凝膠（P-Gel）</a>
+      <img src="images/product1_thumb.jpg" alt="P-Gel">
+      <p>高保濕凝膠，促進表皮再生。</p>
     </div>
-
-    <div class="qr-section">
-      <h2>快速掃描進入 Dr.Wound 首頁</h2>
-      <p>掃描以下 QR Code 即可造訪我們的網站：</p>
-      <img src="images/drwound_qr.png" alt="Dr.Wound QR Code">
+    <div class="product-card">
+      <a href="product2.html">藻酸凝膠（Alginate Gel）</a>
+      <img src="images/product2_thumb.jpg" alt="Alginate Gel">
+      <p>軟化壞死組織，促進肉芽。</p>
     </div>
-
-    <div class="back-link">
-      <a href="index.html">← 回首頁</a>
+    <div class="product-card">
+      <a href="product3.html">皮膚補丁貼（P-Patch）</a>
+      <img src="images/product3_thumb.jpg" alt="P-Patch">
+      <p>防水封閉傷口，維持濕潤。</p>
+    </div>
+    <div class="product-card">
+      <a href="product4.html">皮膚補丁泡棉（P-Foam）</a>
+      <img src="images/product4_thumb.jpg" alt="P-Foam">
+      <p>吸收滲液、緩衝保護。</p>
+    </div>
+    <div class="product-card">
+      <a href="product5.html">藻膠敷料（P-Alginate）</a>
+      <img src="images/product5_thumb.jpg" alt="P-Alginate">
+      <p>乾式止血敷料，促進結痂。</p>
     </div>
   </div>
 </body>

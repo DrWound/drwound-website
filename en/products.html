@@ -1,102 +1,97 @@
-<!-- en/products.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Overview - Dr.Wound</title>
+  <title>Product Overview - Dr. Wound</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
     nav {
-      background-color: #004466;
+      background-color: #004b6b;
       padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav a {
       color: white;
-      margin-right: 15px;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
+    nav .lang-switch {
+      color: #ccc;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
     .product-card {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
     }
     .product-card img {
-      float: right;
-      max-width: 150px;
-      margin-left: 20px;
+      max-width: 100%;
+      height: 160px;
+      object-fit: contain;
     }
-    .product-card h2 {
-      margin-top: 0;
-      color: #004466;
-    }
-    .clear {
-      clear: both;
+    .product-card a {
+      display: block;
+      font-weight: bold;
+      color: #007acc;
+      margin: 10px 0 5px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-<nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-    <a href="downloads.html">Downloads</a>
-  </div>
-  <div>
-    <a href="../index.html" style="font-size: 0.9em; color: gray;">中文版</a>
-  </div>
-</nav>
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="downloads.html">Downloads</a>
+    </div>
+    <a href="../index.html" class="lang-switch">中文版</a>
+  </nav>
 
-  <div class="container">
-    <h1>Product Overview</h1>
-
+  <h1>Product Overview</h1>
+  <div class="product-grid">
     <div class="product-card">
+      <a href="product1.html">P-Gel</a>
       <img src="../images/product1_thumb.jpg" alt="P-Gel">
-      <h2><a href="product1.html">P-Gel</a></h2>
-      <p>High-moisture gel for epithelial regeneration and scar reduction, ideal for superficial wounds.</p>
-      <div class="clear"></div>
+      <p>High-moisture gel to promote epithelial healing.</p>
     </div>
-
     <div class="product-card">
+      <a href="product2.html">Alginate Gel</a>
       <img src="../images/product2_thumb.jpg" alt="Alginate Gel">
-      <h2><a href="product2.html">Alginate Gel</a></h2>
-      <p>Alginate-based gel that maintains moisture and softens necrotic tissue for wound healing.</p>
-      <div class="clear"></div>
+      <p>Softens necrotic tissue and supports granulation.</p>
     </div>
-
     <div class="product-card">
+      <a href="product3.html">P-Patch</a>
       <img src="../images/product3_thumb.jpg" alt="P-Patch">
-      <h2><a href="product3.html">P-Patch</a></h2>
-      <p>Adhesive dressing with waterproof sealing to protect and hydrate superficial wounds.</p>
-      <div class="clear"></div>
+      <p>Waterproof patch for moist wound healing.</p>
     </div>
-
     <div class="product-card">
+      <a href="product4.html">P-Foam</a>
       <img src="../images/product4_thumb.jpg" alt="P-Foam">
-      <h2><a href="product4.html">P-Foam</a></h2>
-      <p>Absorbent foam dressing that conforms to chronic and exuding wounds with cushioning support.</p>
-      <div class="clear"></div>
+      <p>Foam dressing for absorption and protection.</p>
     </div>
-
     <div class="product-card">
-      <img src="../images/product5_thumb.jpg" alt="P-Alginate Wound Dressing">
-      <h2><a href="product5.html">P-Alginate Wound Dressing</a></h2>
-      <p>Highly absorbent alginate dressing that protects, supports hemostasis, and promotes granulation.</p>
-      <div class="clear"></div>
+      <a href="product5.html">P-Alginate Wound Dressing</a>
+      <img src="../images/product5_thumb.jpg" alt="P-Alginate">
+      <p>Dry alginate pad for hemostasis and granulation.</p>
     </div>
   </div>
 </body>
