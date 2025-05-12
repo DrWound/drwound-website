@@ -1,139 +1,87 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Wound 智慧傷口照護首頁</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>產品總覽 - Dr.Wound</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
-      animation: fadeIn 1s ease-in-out;
-    }
-    header {
-      background-color: #00796b;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 0;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .intro {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #f1f8e9;
-    }
-    .quick-links {
-      background-color: #ffffff;
-      padding: 2rem;
-      text-align: center;
-    }
-    .cards {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
-      gap: 1.5rem;
     }
-    .card {
-      width: 240px;
-      background-color: #e3f2fd;
-      border-radius: 12px;
-      padding: 1rem;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 80px;
-      height: 80px;
-    }
-    footer {
-      background-color: #00796b;
-      color: white;
+    .product-card {
+      flex: 1 1 220px;
+      max-width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
       text-align: center;
-      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+    .product-card h3 {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dr. Wound 智慧傷口照護首頁</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">首頁 Home</a></li>
-        <li><a href="about.html">關於我們 About</a></li>
-        <li><a href="products.html">產品總覽 Products</a></li>
-        <li><a href="ai.html">AI 應用 Application</a></li>
-        <li><a href="contact.html">聯絡我們 Contact</a></li>
-        <li><a href="downloads.html">下載資源 Downloads</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">產品總覽</a>
+    <a href="downloads.html">資源下載</a>
+    <a href="contact.html">聯絡我們</a>
+    <span class="lang-switch"><a href="en/products.html">English</a></span>
+  </nav>
 
-  <main>
-    <section class="intro">
-      <h2>歡迎來到 Dr. Wound 智慧傷口照護平台</h2>
-      <p>我們致力於傷口照護創新，結合 AI 技術與臨床經驗，提供完整的解決方案與產品，協助患者恢復健康。</p>
-    </section>
-
-    <section class="quick-links">
-      <h3>快速連結</h3>
-      <div class="cards">
-        <div class="card">
-          <a href="products.html">
-            <img src="images/products_icon.png" alt="產品介紹" />
-            <h4>產品總覽</h4>
-            <p>五款智慧敷料，依照不同傷口階段設計。</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="ai.html">
-            <img src="images/ai_icon.png" alt="AI 分析" />
-            <h4>AI 應用</h4>
-            <p>智慧傷口分類、癒合追蹤與照護建議。</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="contact.html">
-            <img src="images/contact_icon.png" alt="聯絡我們" />
-            <h4>聯絡我們</h4>
-            <p>歡迎與我們聯繫合作，成為臨床夥伴。</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="downloads.html">
-            <img src="images/downloads_icon.png" alt="下載資源" />
-            <h4>下載資源</h4>
-            <p>取得產品簡報、教學影片與研究文獻。</p>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Dr. Wound 智慧傷口照護平台</p>
-  </footer>
+  <h2>產品總覽</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="product1.html">
+        <img src="images/product1_thumb.jpg" alt="P-Gel">
+        <h3>皮膚補丁凝膠<br>P-Gel</h3>
+      </a>
+    </div>
+    <div class="product-card">
+      <a href="product2.html">
+        <img src="images/product2_thumb.jpg" alt="Alginate Gel">
+        <h3>藻酸凝膠<br>Alginate Gel</h3>
+      </a>
+    </div>
+    <div class="product-card">
+      <a href="product3.html">
+        <img src="images/product3_thumb.jpg" alt="P-Patch">
+        <h3>皮膚補丁貼<br>P-Patch</h3>
+      </a>
+    </div>
+    <div class="product-card">
+      <a href="product4.html">
+        <img src="images/product4_thumb.jpg" alt="P-Foam">
+        <h3>皮膚補丁泡棉<br>P-Foam</h3>
+      </a>
+    </div>
+    <div class="product-card">
+      <a href="product5.html">
+        <img src="images/product5_thumb.jpg" alt="P-Alginate Dressing">
+        <h3>藻膠敷料<br>P-Alginate Dressing</h3>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
