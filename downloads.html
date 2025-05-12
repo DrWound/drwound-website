@@ -8,15 +8,13 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fff;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
     nav {
       background-color: #004466;
       padding: 12px 20px;
-      color: white;
     }
     nav a {
       color: white;
@@ -24,20 +22,33 @@
       text-decoration: none;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
     }
     h1 {
       color: #004466;
+      text-align: center;
     }
-    ul {
-      list-style-type: square;
+    ul.download-list {
+      list-style: none;
+      padding: 0;
     }
-    .logo {
-      display: block;
-      margin: 20px auto;
-      max-width: 200px;
+    ul.download-list li {
+      background: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    ul.download-list li a {
+      color: #004466;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -46,21 +57,21 @@
     <a href="index.html">首頁</a>
     <a href="about.html">關於我們</a>
     <a href="products.html">產品總覽</a>
-    <a href="contact.html">聯絡我們</a>
     <a href="downloads.html">下載資源</a>
+    <a href="contact.html">聯絡我們</a>
   </nav>
 
   <div class="container">
-    <img src="images/logo.png" alt="Dr.Wound Logo" class="logo" />
     <h1>下載資源</h1>
-    <p>以下是可供下載的資源與文件：</p>
-    <ul>
-      <li><a href="#">Dr.Wound 產品型錄（PDF）</a></li>
-      <li><a href="#">臨床操作手冊（PDF）</a></li>
-      <li><a href="#">教學影片與示範</a></li>
-      <li><a href="#">使用者回饋表單</a></li>
+    <ul class="download-list">
+      <li><a href="https://drive.google.com/file/d/1L5vQk7Xd19oryivSSyljo3RA7XNrpEzp/view?usp=drive_link" target="_blank">📄 P-Gel 使用手冊 PDF</a></li>
+      <li><a href="https://drive.google.com/file/d/11WlE1XbCymCKVmW1061-96qWt4ul94ZL/view?usp=drive_link" target="_blank">📄 Alginate Gel 使用說明</a></li>
+      <li><a href="https://drive.google.com/file/d/1jXrDNTtp7c5hzRSsb1h6iDFZdMhfGRKP/view?usp=drive_link" target="_blank">📄 P-Foam 使用說明 PDF</a></li>
+      <li><a href="https://drive.google.com/file/d/1TXT0KuHm_uhNbnHkpnhyyma5jLzehcfa/view?usp=drive_link" target="_blank">🎥 Dr.Wound 產品介紹影片</a></li>
     </ul>
-    <p>如有其他需求，歡迎聯絡我們提供更多資源。</p>
+    <div class="back-link">
+      <a href="index.html">← 回首頁</a>
+    </div>
   </div>
 </body>
 </html>
