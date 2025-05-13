@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr. Wound 智慧傷口照護首頁</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #f8fcf2;
+    }
+    nav {
+      background-color: #00796b;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .lang-switch {
+      margin-left: auto;
+      color: #ccc;
+    }
+    h1 {
+      text-align: center;
+      color: #000;
+    }
+    .intro {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #e3f2fd;
+      padding: 1rem;
+      border-radius: 12px;
+      width: 240px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+    .card a {
+      display: block;
+      margin-top: 0.5rem;
+      color: #3f51b5;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html">首頁 Home</a>
+    <a href="../about.html">關於我們 About</a>
+    <a href="../products.html">產品總覽 Products</a>
+    <a href="../ai.html">AI 應用 Application</a>
+    <a href="../contact.html">聯絡我們 Contact</a>
+    <a href="../downloads.html">下載資源 Downloads</a>
+    <span class="lang-switch"><a href="../en/index.html">English</a></span>
+  </nav>
+
+  <h1>Dr. Wound 智慧傷口照護首頁</h1>
+
+  <div class="intro">
+    <p>我們致力於傷口照護創新，結合 AI 技術與臨床經驗，提供完整的解決方案與產品，協助患者恢復健康。</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/product1_thumb.jpg" alt="產品介紹">
+      <a href="products.html">產品總覽</a>
+      <p>五款智慧敷料，依照不同傷口階段設計。</p>
+    </div>
+    <div class="card">
+      <img src="images/ai_icon.png" alt="AI 分析">
+      <a href="ai.html">AI 應用</a>
+      <p>智慧傷口分類、癒合追蹤與照護建議。</p>
+    </div>
+    <div class="card">
+      <img src="images/contact_icon.png" alt="聯絡我們">
+      <a href="contact.html">聯絡我們</a>
+      <p>歡迎與我們聯繫合作，成為臨床夥伴。</p>
+    </div>
+    <div class="card">
+      <img src="images/download_icon.png" alt="下載資源">
+      <a href="downloads.html">下載資源</a>
+      <p>取得產品簡報、教學影片與研究文獻。</p>
+    </div>
+  </div>
+
+</body>
+</html>
