@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Product Overview - Dr. Wound</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Overview - Dr.Wound</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
-    nav {
-      background-color: #004b6b;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
     }
+
+    nav {
+      background-color: #006666;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 1rem;
       font-weight: bold;
     }
-    nav .lang-switch {
-      color: #ccc;
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    h1 {
+
+    .lang-switch {
+      margin-left: auto;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    h2 {
       text-align: center;
-      padding: 20px;
+      margin-top: 2rem;
+      color: #222;
     }
+
     .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 20px;
+      padding: 2rem;
     }
+
     .product-card {
       background: white;
       border-radius: 8px;
@@ -40,62 +60,80 @@
       text-align: center;
       padding: 15px;
     }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
     .product-card img {
       max-width: 100%;
       height: 160px;
       object-fit: contain;
     }
-    .product-card a {
-      display: block;
-      font-weight: bold;
-      color: #007acc;
-      margin: 10px 0 5px;
-      text-decoration: none;
+
+    .product-card h3 {
+      color: #005599;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #333;
     }
   </style>
 </head>
 <body>
-<nav style="display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px;">
-  <div style="display: flex; align-items: center;">
-    <a href="index.html"><img src="../images/logo.jpg" alt="DrWound Logo" style="height: 40px; margin-right: 15px;"></a>
-    <a href="index.html" style="margin-right: 15px;">Home</a>
-    <a href="about.html" style="margin-right: 15px;">About</a>
-    <a href="products.html" style="margin-right: 15px;">Products</a>
-    <a href="contact.html" style="margin-right: 15px;">Contact</a>
-    <a href="downloads.html">Downloads</a>
-  </div>
-  <div>
-    <a href="../products.html" style="color: #007bff;">中文版</a>
-  </div>
-</nav>
+  <nav>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="ai.html">AI</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="lang-switch">
+      <a href="../zh/products.html">中文版</a>
+    </div>
+  </nav>
 
+  <h2>Product Overview</h2>
 
-  <h1>Product Overview</h1>
   <div class="product-grid">
     <div class="product-card">
-      <a href="product1.html">P-Gel</a>
-      <img src="../images/product1_thumb.jpg" alt="P-Gel">
-      <p>High-moisture gel to promote epithelial healing.</p>
+      <a href="product1.html">
+        <img src="../images/product1_thumb.jpg" alt="P-Gel" />
+        <h3>P-Gel</h3>
+        <p>High-moisture gel for epithelial regeneration.</p>
+      </a>
     </div>
     <div class="product-card">
-      <a href="product2.html">Alginate Gel</a>
-      <img src="../images/product2_thumb.jpg" alt="Alginate Gel">
-      <p>Softens necrotic tissue and supports granulation.</p>
+      <a href="product2.html">
+        <img src="../images/product2_thumb.jpg" alt="Alginate Gel" />
+        <h3>Alginate Gel</h3>
+        <p>Softens necrotic tissue and supports healing.</p>
+      </a>
     </div>
     <div class="product-card">
-      <a href="product3.html">P-Patch</a>
-      <img src="../images/product3_thumb.jpg" alt="P-Patch">
-      <p>Waterproof patch for moist wound healing.</p>
+      <a href="product3.html">
+        <img src="../images/product3_thumb.jpg" alt="P-Patch" />
+        <h3>P-Patch</h3>
+        <p>Seals and protects superficial wounds.</p>
+      </a>
     </div>
     <div class="product-card">
-      <a href="product4.html">P-Foam</a>
-      <img src="../images/product4_thumb.jpg" alt="P-Foam">
-      <p>Foam dressing for absorption and protection.</p>
+      <a href="product4.html">
+        <img src="../images/product4_thumb.jpg" alt="P-Foam" />
+        <h3>P-Foam</h3>
+        <p>Absorbs exudate and provides cushioning.</p>
+      </a>
     </div>
     <div class="product-card">
-      <a href="product5.html">P-Alginate Wound Dressing</a>
-      <img src="../images/product5_thumb.jpg" alt="P-Alginate">
-      <p>Dry alginate pad for hemostasis and granulation.</p>
+      <a href="product5.html">
+        <img src="../images/product5_thumb.jpg" alt="P-Alginate" />
+        <h3>P-Alginate</h3>
+        <p>Highly absorbent alginate dressing for chronic wounds.</p>
+      </a>
     </div>
   </div>
 </body>

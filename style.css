@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #004d66;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.lang-switch {
+  margin-left: auto;
+  color: #ccc;
+}
+
+h2 {
+  text-align: center;
+  color: #004d66;
+  margin-top: 2rem;
+}

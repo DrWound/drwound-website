@@ -1,38 +1,53 @@
-<!-- en/product4.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Foam - Dr.Wound</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>P-Foam</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .product-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .product-image {
+      max-height: 200px;
+      width: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .product-description {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    nav {
+      background-color: #006666;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<nav style="display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px;">
-  <div style="display: flex; align-items: center;">
-    <a href="index.html"><img src="../images/logo.jpg" alt="DrWound Logo" style="height: 40px; margin-right: 15px;"></a>
-    <a href="index.html" style="margin-right: 15px;">Home</a>
-    <a href="about.html" style="margin-right: 15px;">About</a>
-    <a href="products.html" style="margin-right: 15px;">Products</a>
-    <a href="contact.html" style="margin-right: 15px;">Contact</a>
-    <a href="downloads.html">Downloads</a>
-  </div>
-  <div>
-    <a href="../product1.html" style="color: #007bff;">中文版</a>
-  </div>
+  <nav>
+  <a href="../en/index.html">Home</a>
+  <a href="../en/about.html">About</a>
+  <a href="../en/products.html">Products</a>
+  <a href="../en/downloads.html">Downloads</a>
+  <a href="../en/contact.html">Contact</a>
+  <span class="lang-switch"><a href="../zh/product4.html">中文版</a></span>
 </nav>
-
-
-
-  <div class="container">
-    <h1>P-Foam (Foam Dressing)</h1>
-    <img src="../images/product4_thumb.jpg" alt="P-Foam Image" style="max-width:100%; height:auto;">
-    <p>
-      P-Foam is a soft, absorbent foam dressing offering cushioning, breathability, and support for epithelial contraction. Ideal for chronic wounds, pressure sores, and diabetic ulcers.
-    </p>
-    <div class="back-link">
-      <a href="products.html">&larr; Back to Product Overview</a>
-    </div>
+  <div class="product-container">
+    <h2>P-Foam</h2>
+    <img src="../images/product4_thumb.jpg" alt="P-Foam" class="product-image"/>
+    <p class="product-description">Soft foam material with high absorbency and cushioning, supports epithelial contraction. Suitable for chronic wounds, pressure ulcers, diabetic foot, etc.</p>
   </div>
 </body>
 </html>

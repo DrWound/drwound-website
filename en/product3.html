@@ -1,38 +1,53 @@
-<!-- en/product3.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Patch - Dr.Wound</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>P-Patch</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .product-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .product-image {
+      max-height: 200px;
+      width: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .product-description {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    nav {
+      background-color: #006666;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<nav style="display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px;">
-  <div style="display: flex; align-items: center;">
-    <a href="index.html"><img src="../images/logo.jpg" alt="DrWound Logo" style="height: 40px; margin-right: 15px;"></a>
-    <a href="index.html" style="margin-right: 15px;">Home</a>
-    <a href="about.html" style="margin-right: 15px;">About</a>
-    <a href="products.html" style="margin-right: 15px;">Products</a>
-    <a href="contact.html" style="margin-right: 15px;">Contact</a>
-    <a href="downloads.html">Downloads</a>
-  </div>
-  <div>
-    <a href="../product1.html" style="color: #007bff;">中文版</a>
-  </div>
+  <nav>
+  <a href="../en/index.html">Home</a>
+  <a href="../en/about.html">About</a>
+  <a href="../en/products.html">Products</a>
+  <a href="../en/downloads.html">Downloads</a>
+  <a href="../en/contact.html">Contact</a>
+  <span class="lang-switch"><a href="../zh/product3.html">中文版</a></span>
 </nav>
-
-
-
-  <div class="container">
-    <h1>P-Patch (Skin Patch)</h1>
-    <img src="../images/product3_thumb.jpg" alt="P-Patch Image" style="max-width:100%; height:auto;">
-    <p>
-      P-Patch adheres tightly to wounds, offering waterproof protection and minimizing infection. Ideal for blisters, abrasions, and all open superficial wounds.
-    </p>
-    <div class="back-link">
-      <a href="products.html">&larr; Back to Product Overview</a>
-    </div>
+  <div class="product-container">
+    <h2>P-Patch</h2>
+    <img src="../images/product3_thumb.jpg" alt="P-Patch" class="product-image"/>
+    <p class="product-description">Adhesive patch with waterproof sealing to protect and hydrate superficial wounds like blisters, abrasions, and tears.</p>
   </div>
 </body>
 </html>

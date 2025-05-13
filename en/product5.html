@@ -1,38 +1,53 @@
-<!-- en/product5.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Alginate Dressing - Dr.Wound</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>P-Alginate Dressing</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .product-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .product-image {
+      max-height: 200px;
+      width: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    .product-description {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    nav {
+      background-color: #006666;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<nav style="display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px;">
-  <div style="display: flex; align-items: center;">
-    <a href="index.html"><img src="../images/logo.jpg" alt="DrWound Logo" style="height: 40px; margin-right: 15px;"></a>
-    <a href="index.html" style="margin-right: 15px;">Home</a>
-    <a href="about.html" style="margin-right: 15px;">About</a>
-    <a href="products.html" style="margin-right: 15px;">Products</a>
-    <a href="contact.html" style="margin-right: 15px;">Contact</a>
-    <a href="downloads.html">Downloads</a>
-  </div>
-  <div>
-    <a href="../product1.html" style="color: #007bff;">中文版</a>
-  </div>
+  <nav>
+  <a href="../en/index.html">Home</a>
+  <a href="../en/about.html">About</a>
+  <a href="../en/products.html">Products</a>
+  <a href="../en/downloads.html">Downloads</a>
+  <a href="../en/contact.html">Contact</a>
+  <span class="lang-switch"><a href="../zh/product5.html">中文版</a></span>
 </nav>
-
-
-
-  <div class="container">
-    <h1>P-Alginate Dressing</h1>
-    <img src="../images/product5_thumb.jpg" alt="P-Alginate Image" style="max-width:100%; height:auto;">
-    <p>
-      High-absorbency alginate dressing that gels upon contact with wound exudate. Offers protection, hemostasis, and supports dry healing and scab formation. Ideal for chronic wounds, diabetic ulcers, and moderate-exudate wounds.
-    </p>
-    <div class="back-link">
-      <a href="products.html">&larr; Back to Product Overview</a>
-    </div>
+  <div class="product-container">
+    <h2>P-Alginate Dressing</h2>
+    <img src="../images/product5_thumb.jpg" alt="P-Alginate Dressing" class="product-image"/>
+    <p class="product-description">Highly absorbent alginate dressing that forms gel and scabs for wound protection, hemostasis, and dry-care scab formation. Ideal for chronic wounds.</p>
   </div>
 </body>
 </html>
