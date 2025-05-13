@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>產品總覽 - Dr. Wound</title>
+  <style>
+    body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; background: #f7f7f7; }
+    nav {
+      background-color: #004b6b;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav .lang-switch {
+      color: #ccc;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 160px;
+      object-fit: contain;
+    }
+    .product-card a {
+      display: block;
+      font-weight: bold;
+      color: #007acc;
+      margin: 10px 0 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<nav style="display: flex; align-items: center; justify-content: space-between; background-color: #f8f8f8; padding: 10px 20px;">
+  <div style="display: flex; align-items: center;">
+    <a href="../index.html"><img src="images/logo.jpg" alt="DrWound Logo" style="height: 40px; margin-right: 15px;"></a>
+    <a href="../index.html" style="margin-right: 15px;">首頁</a>
+    <a href="../about.html" style="margin-right: 15px;">關於我們</a>
+    <a href="../products.html" style="margin-right: 15px;">產品總覽</a>
+    <a href="../contact.html" style="margin-right: 15px;">聯絡我們</a>
+    <a href="../downloads.html">下載專區</a>
+  </div>
+  <div>
+    <a href="../en/products.html" style="color: #007bff;">English</a>
+  </div>
+</nav>
+
+
+  <h1>產品總覽</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <a href="product1.html">皮膚補丁凝膠（P-Gel）</a>
+      <img src="images/product1_thumb.jpg" alt="P-Gel">
+      <p>高保濕凝膠，促進表皮再生。</p>
+    </div>
+    <div class="product-card">
+      <a href="product2.html">藻酸凝膠（Alginate Gel）</a>
+      <img src="images/product2_thumb.jpg" alt="Alginate Gel">
+      <p>軟化壞死組織，促進肉芽。</p>
+    </div>
+    <div class="product-card">
+      <a href="product3.html">皮膚補丁貼（P-Patch）</a>
+      <img src="images/product3_thumb.jpg" alt="P-Patch">
+      <p>防水封閉傷口，維持濕潤。</p>
+    </div>
+    <div class="product-card">
+      <a href="product4.html">皮膚補丁泡棉（P-Foam）</a>
+      <img src="images/product4_thumb.jpg" alt="P-Foam">
+      <p>吸收滲液、緩衝保護。</p>
+    </div>
+    <div class="product-card">
+      <a href="product5.html">藻膠敷料（P-Alginate）</a>
+      <img src="images/product5_thumb.jpg" alt="P-Alginate">
+      <p>乾式止血敷料，促進結痂。</p>
+    </div>
+  </div>
+</body>
+</html>
