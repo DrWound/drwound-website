@@ -156,6 +156,13 @@ ul.download-list {
       text-align: center;
       margin-top: 40px;
     }
+    
+.back-home {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 
 
 footer {
