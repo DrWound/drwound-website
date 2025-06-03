@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>AI Application - Dr.Wound</title>
   <link rel="stylesheet" href="../style.css" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJWTEW75RR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YJWTEW75RR');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJWTEW75RR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YJWTEW75RR');
+  </script>
 </head>
 <body>
   <nav>
@@ -27,18 +25,25 @@
     </div>
     <div class="nav-right"><a href="../zh/ai.html">中文</a></div>
   </nav>
+
   <div class="container">
-    <h2>AI-Powered Wound Care System</h2>
-    <ul>
-      <li><strong>Wound Classification:</strong> Automatically categorize wounds into W1–W4 grades (e.g., superficial, granulating, cavity, necrotic) based on uploaded images.</li>
-      <li><strong>Healing Progress Tracking:</strong> Monitor healing through sequential photo uploads, and generate visual trend reports.</li>
-      <li><strong>Treatment Recommendations:</strong> Suggest wound care products and stage-specific treatment plans.</li>
-    </ul>
-    <p>This intelligent system empowers clinicians and caregivers to make faster, more accurate, and consistent wound care decisions.</p>
+    <h2>AI-Powered Wound Detection System</h2>
+    <p>Our AI system automatically analyzes wound images, classifies them into stages, tracks healing, and suggests care strategies.</p>
+
+    <form action="https://bfb1-1-175-66-172.ngrok-free.app/upload" method="post" enctype="multipart/form-data" style="margin-top: 30px; text-align: center;">
+      <label for="file">Choose or take a photo of your wound:</label><br><br>
+      <input type="file" id="file" name="file" accept="image/*" capture="environment" required><br><br>
+      <button type="submit" style="padding: 10px 20px; font-size: 16px; background-color: #007ACC; color: white; border: none; border-radius: 6px; cursor: pointer;">📤 Upload and Analyze</button>
+    </form>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://bfb1-1-175-66-172.ngrok-free.app" alt="QR Code for AI System" style="border: 1px solid #ccc;">
+      <p>📱 Scan the QR code above to open on your phone</p>
+    </div>
   </div>
 
-
-
-  <footer><p>© 2025 Dr.Wound Smart Wound Care Center</p></footer>
+  <footer>
+    <p>© 2025 Dr.Wound Smart Wound Care Center</p>
+  </footer>
 </body>
 </html>
